@@ -1,0 +1,81 @@
+<!DOCTYPE hmtl>
+<html lang="pt-br">
+<head>
+   <title> Zaskar </title>
+   <meta charset="UTF-8"/>
+</head>
+
+<body>
+<canvas id="exemplo" width="500" height="200"> JOHN CENA </canvas> 
+<canvas id="exemplo2" width="500" height="200"> JOHN CENA </canvas>
+<canvas id="maminitrix" width="500" height="400"> BENIO </canvas>
+<canvas id="relogio" width="500" height="400"> BEN </canvas>
+
+<script>
+var c=document.getElementById('exemplo');
+var ctx=c.getContext("2d");
+
+
+ctx.moveTo(80,80);
+ctx.lineTo(80,150);
+ctx.lineTo(150,150);
+ctx.lineTo(150,80);
+ctx.lineTo(80,80);
+ctx.fillStyle="green";
+ctx.fill();
+
+
+
+var d=document.getElementById('exemplo2');
+var dtx=d.getContext("2d");
+dtx.moveTo(100,100)
+dtx.lineTo(180,100)
+dtx.lineTo(200,200)
+dtx.fillStyle="purple";
+dtx.fill();
+
+var benio=document.getElementById('maminitrix');
+var btx=benio.getContext("2d");
+btx.fillStyle="black";
+btx.beginPath();
+btx.arc(140,145,100,0,2*3.14);
+btx.fill();
+btx.beginPath();
+
+btx.moveTo(80,80);
+btx.lineTo(140,160);
+btx.lineTo(200,80);
+btx.fillStyle="green";
+btx.fill();
+
+btx.moveTo(80,210);
+btx.lineTo(140,140);
+btx.lineTo(200,210);
+btx.fillStyle="green";
+btx.fill();
+
+btx.moveTo(80,80);
+btx.lineTo(140,160);
+btx.lineTo(200,80);
+btx.strokeStyle="green";
+btx.stroke();
+
+btx.font="30px arial";
+btx.fillText("OMNITRIX", 10,50,100);
+btx.Stroke();
+
+
+
+
+var o=document.getElementById('relogio');
+var otx=o.getContext("2d");
+otx.beginPath();
+otx.arc(95,50,40,0,2*3.14);
+otx.fillStyle="black";
+otx.fill();
+
+</script>
+
+</body>
+
+</html>
