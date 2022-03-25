@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title> Projeto Canvas </title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<style>
+	          body{
+			     background-image:url("img/galvanp.png");
+			     
+				  background-size:100%;
+				  background-repeat:no-repeat;
+				  background-attachment:fixed;
+				  }
+      </style>
+</head>
+
+<body>
+<canvas id="galvan" width="1500" height="1300px"> Galvan Prime </canvas>
+
+<script>
+var c=document.getElementById('galvan');
+var ctx=c.getContext("2d");
+var radgrad = ctx.createRadialGradient(25, 45, 5, 52, 50, 30);
+  radgrad.addColorStop(0.5, '#A7D30C');
+  radgrad.addColorStop(1, '#6EE103');
+
+
+
+ ctx.beginPath();
+ ctx.moveTo(400,500);
+ ctx.lineTo(1320,500);
+ ctx.lineTo(1320,720);
+ ctx.lineTo(1180,800);
+ ctx.lineTo(1050,802);
+ ctx.lineTo(900,900);
+ ctx.lineTo(600,902);
+ ctx.lineTo(500,802);
+ ctx.lineTo(350,802);
+ ctx.lineTo(250,700);
+ ctx.lineTo(250,500);
+ ctx.lineTo(400,500);
+ ctx.lineWidth= 10;
+ ctx.shadowBlur = 20;
+ ctx.shadowColor = "white";
+ ctx.strokeStyle="#ababab";
+ ctx.stroke();
+ 
+ ctx.beginPath();
+ ctx.moveTo(50,100);
+ ctx.lineTo(400,100);
+ ctx.lineTo(310,250);
+ ctx.lineTo(50,250);
+ ctx.lineTo(50,95);
+ ctx.strokeStyle="#ababab";
+ ctx.stroke();
+ 
+ ctx.beginPath();
+ ctx.moveTo(1320,200);
+ ctx.lineTo(1020,200);
+ ctx.lineTo(1120,350);
+ ctx.lineTo(1320,350);
+ ctx.lineTo(1320,195);
+ ctx.strokeStyle="#ababab";
+ ctx.stroke();
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(400,500);
+ ctx.lineTo(1320,500);
+ ctx.lineTo(1320,720);
+ ctx.lineTo(1180,800);
+ ctx.lineTo(1050,802);
+ ctx.lineTo(900,900);
+ ctx.lineTo(600,902);
+ ctx.lineTo(500,802);
+ ctx.lineTo(350,802);
+ ctx.lineTo(250,700);
+ ctx.lineTo(250,500);
+ ctx.lineTo(400,500);
+ ctx.fillStyle="#575757";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.moveTo(50,100);
+ ctx.lineTo(400,100);
+ ctx.lineTo(310,250);
+ ctx.lineTo(50,250);
+ ctx.lineTo(50,100);
+ ctx.fillStyle="#575757";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.moveTo(1320,200);
+ ctx.lineTo(1020,200);
+ ctx.lineTo(1120,350);
+ ctx.lineTo(1320,350);
+ ctx.lineTo(1320,200);
+ ctx.fillStyle="#575757";
+ ctx.fill();
+ 
+ ctx.fillStyle = radgrad;
+ ctx.beginPath();
+ ctx.arc(780,650,100,0,2*3.14);
+ ctx.shadowBlur = 70;
+ ctx.shadowColor = "#6EE103";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.arc(780,650,100,0,2*3.14);
+ ctx.lineWidth=4;
+ ctx.shadowBlur = 140;
+ ctx.shadowColor = "#6EE103";
+ ctx.strokeStyle="black";
+ ctx.stroke();
+ 
+ ctx.beginPath();
+ ctx.moveTo(705,580);
+ ctx.lineTo(760,650);
+ ctx.lineTo(705,720);
+ ctx.quadraticCurveTo(675,680,684,620);
+ ctx.fillStyle="black";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.moveTo(850,580);
+ ctx.lineTo(790,650);
+ ctx.lineTo(850,720);
+ ctx.quadraticCurveTo(900,670,865,600);
+ ctx.fillStyle="black";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.moveTo(500,200);
+ ctx.lineTo(800,200);
+ ctx.lineTo(800,220);
+ ctx.lineTo(500,220);
+ ctx.lineTo(500,198);
+  ctx.shadowBlur = 20;
+ ctx.shadowColor = "white";
+ ctx.strokeStyle="#ababab";
+ ctx.stroke();
+ 
+ ctx.beginPath();
+ ctx.moveTo(500,200);
+ ctx.lineTo(800,200);
+ ctx.lineTo(800,220);
+ ctx.lineTo(500,220);
+ ctx.lineTo(500,188);
+ ctx.fillStyle="#575757";
+ ctx.fill();
+ 
+ ctx.beginPath();
+ ctx.moveTo(400,300);
+ ctx.lineTo(900,300);
+ ctx.lineTo(900,320);
+ ctx.lineTo(400,320);
+ ctx.lineTo(400,298);
+ ctx.strokeStyle="#ababab";
+ ctx.stroke();
+ 
+ ctx.beginPath();
+ ctx.moveTo(400,300);
+ ctx.lineTo(900,300);
+ ctx.lineTo(900,320);
+ ctx.lineTo(400,320);
+ ctx.lineTo(400,298);
+ ctx.fillStyle="#575757";
+ ctx.fill();
+ 
+
+</script>
+
+</body>
+</html>
